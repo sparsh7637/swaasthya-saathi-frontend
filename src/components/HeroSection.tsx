@@ -79,9 +79,19 @@ const HeroSection = () => {
           <div className="mt-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <p className="text-sm text-muted-foreground mb-4">Available in</p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['हिंदी', 'தமிழ்', 'বাংলা', 'ગુજરાતી', 'ಕನ್ನಡ', 'മലയാളം', 'English'].map((lang) => (
-                <span 
-                  key={lang}
+              {[
+                'हिंदी',
+                'English',
+                'বাংলা',
+                'தமிழ்',
+                'తెలుగు',
+                'ಕನ್ನಡ',
+                'മലയാളം',
+                'मराठी',
+                'ગુજરાતી',
+              ].map((lang, index) => (
+                <span
+                  key={index}
                   className="px-3 py-1 bg-accent rounded-full text-accent-foreground text-sm font-medium border border-border/50"
                 >
                   {lang}
