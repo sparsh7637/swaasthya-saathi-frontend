@@ -40,9 +40,12 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
           {/* Main title */}
           <h1 className="text-5xl md:text-7xl font-bold font-poppins text-foreground leading-tight">
-            Swaasthya Saathi
-            <span className="block text-transparent bg-gradient-hero bg-clip-text">
-              Your AI Health Assistant on WhatsApp
+            
+            <span className="block text-transparent mt-10 bg-gradient-hero bg-clip-text">
+              Your AI Health Assistant
+            </span>
+            <span className="text-5xl md:text-7xl font-bold font-poppins text-foreground leading-tight">
+              On WhatsApp
             </span>
           </h1>
           
@@ -50,7 +53,7 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl text-muted-foreground font-inter max-w-2xl mx-auto leading-relaxed">
             Send your prescription. Get instant spoken guidance in your language.
             <span className="block mt-2 text-primary font-medium">
-              🇮🇳 Supporting all major Indian languages
+              Supporting all major Indian languages
             </span>
           </p>
 
@@ -66,10 +69,10 @@ const HeroSection = () => {
               Start Chat with AI Doctor
             </Button>
             
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            {/* <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
               Free • Instant • Multilingual
-            </div>
+            </div> */}
           </div>
 
           {/* Language indicators */}

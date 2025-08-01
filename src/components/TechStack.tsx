@@ -1,7 +1,7 @@
 import { Brain, MessageSquare, Mic, Smartphone } from "lucide-react";
 
 const TechStack = () => {
-  const technologies = [
+  const technologies =[
     {
       icon: Brain,
       name: "LLaMA-4-Scout",
@@ -13,7 +13,7 @@ const TechStack = () => {
     {
       icon: MessageSquare,
       name: "II-Medical-8B-1706",
-      description: "Specialized Medical Q&A Intelligence",
+      description: "Answers health questions with clinical reasoning",
       feature: "Health Guidance",
       color: "text-secondary",
       bgColor: "bg-secondary/10"
@@ -21,7 +21,7 @@ const TechStack = () => {
     {
       icon: Mic,
       name: "Sarvam AI",
-      description: "Multilingual Text-to-Speech Engine",
+      description: "Handles Speech-to-Text (ASR) and Text-to-Speech",
       feature: "Voice in Your Language",
       color: "text-primary",
       bgColor: "bg-primary/10"
@@ -29,12 +29,13 @@ const TechStack = () => {
     {
       icon: Smartphone,
       name: "Twilio API",
-      description: "Seamless WhatsApp Integration",
+      description: "Enables WhatsApp messaging and voice interaction",
       feature: "Chat Interface",
       color: "text-secondary",
       bgColor: "bg-secondary/10"
     }
-  ];
+  ]
+  
 
   return (
     <section className="py-20 bg-white">
@@ -93,14 +94,15 @@ const TechStack = () => {
         <div className="mt-16 text-center animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
           <div className="bg-accent rounded-2xl p-8 max-w-4xl mx-auto border border-border/50">
             <h3 className="text-2xl font-semibold font-poppins text-foreground mb-4">
-              Built for Government & Healthcare Excellence
+              ASHA Saathi: 1-Click Health Summary Generator
             </h3>
             <p className="text-muted-foreground font-inter leading-relaxed">
-              Our AI technology meets the highest standards for medical accuracy and 
-              data security, designed specifically for India's diverse healthcare ecosystem.
+              ASHA workers often juggle multiple apps and complex reports, slowing down frontline care.
+              Our solution simplifies this by scanning medical reports using OCR and fusing data from mock government APIs, then generating an easy-to-understand audio summary in the local language with clear action points.
             </p>
           </div>
         </div>
+
       </div>
     </section>
   );

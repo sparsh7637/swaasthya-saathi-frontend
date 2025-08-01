@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Main content */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold font-poppins">
-              AI Dawa Connect
+              Swaasthya Saathi
             </h3>
             <p className="text-white/70 font-inter max-w-2xl mx-auto">
               Bridging the gap between healthcare and technology for a healthier India. 
@@ -58,12 +58,10 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-white/20 pt-8 text-white/60 text-sm font-inter">
             <p className="flex items-center justify-center space-x-2">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>for India's healthcare future</span>
+              <span>Made for India's healthcare future</span>
             </p>
             <p className="mt-2">
-              © 2024 AI Dawa Connect. Supporting government healthcare initiatives.
+              © 2024 Swaasthya Saathi. Supporting government healthcare initiatives.
             </p>
           </div>
         </div>

@@ -11,12 +11,12 @@ const BharatStrategy = () => {
 
   return (
     <section 
-      className="py-20 relative overflow-hidden"
-      style={{
-        backgroundImage: `url(${indiaBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+      // className="py-20 relative overflow-hidden"
+      // style={{
+      //   backgroundImage: `url(${indiaBackground})`,
+      //   backgroundSize: 'cover',
+      //   backgroundPosition: 'center',
+      // }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-white/95" />
@@ -34,16 +34,19 @@ const BharatStrategy = () => {
 
         {/* Main flow diagram */}
         <div className="max-w-6xl mx-auto mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-            {/* Input */}
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            {/* Step 1: User Input */}
+            <div className="relative animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              {/* Step number */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
+                1
+              </div>
               <div className="bg-card rounded-2xl p-8 shadow-medical border border-border/50 text-center">
                 <div className="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Languages className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold font-poppins text-foreground mb-4">
-                  Your Input
-                </h3>
+                <h3 className="text-xl font-semibold font-poppins text-foreground mb-4">Your Input</h3>
                 <p className="text-muted-foreground font-inter mb-4">
                   Speak or type in any Indian language or Hinglish
                 </p>
@@ -53,20 +56,37 @@ const BharatStrategy = () => {
               </div>
             </div>
 
-            {/* Arrow */}
-            <div className="hidden lg:flex justify-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <ArrowRight className="w-8 h-8 text-primary" />
+            {/* Step 2: Language Mapping */}
+            <div className="relative animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+              {/* Step number */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
+                2
+              </div>
+              <div className="bg-card rounded-2xl p-8 shadow-medical border border-border/50 text-center">
+                <div className="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Languages className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-semibold font-poppins text-foreground mb-4">Language Mapping</h3>
+                <p className="text-muted-foreground font-inter mb-4">
+                  Translating Hinglish/native input to English for precision
+                </p>
+                <div className="bg-accent rounded-lg p-3 text-sm text-accent-foreground font-medium">
+                  "I have stomach pain"
+                </div>
+              </div>
             </div>
 
-            {/* Processing */}
-            <div className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+            {/* Step 3: AI Processing */}
+            <div className="relative animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              {/* Step number */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
+                3
+              </div>
               <div className="bg-card rounded-2xl p-8 shadow-medical border border-border/50 text-center">
                 <div className="w-16 h-16 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Users className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold font-poppins text-foreground mb-4">
-                  AI Processing
-                </h3>
+                <h3 className="text-xl font-semibold font-poppins text-foreground mb-4">AI Processing</h3>
                 <p className="text-muted-foreground font-inter mb-4">
                   Understanding context in English for medical accuracy
                 </p>
@@ -76,20 +96,17 @@ const BharatStrategy = () => {
               </div>
             </div>
 
-            {/* Arrow */}
-            <div className="hidden lg:flex justify-center animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-              <ArrowRight className="w-8 h-8 text-primary" />
-            </div>
-
-            {/* Output */}
-            <div className="animate-fade-in-up" style={{ animationDelay: '1s' }}>
+            {/* Step 4: Audio Response */}
+            <div className="relative animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+              {/* Step number */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
+                4
+              </div>
               <div className="bg-card rounded-2xl p-8 shadow-medical border border-border/50 text-center">
                 <div className="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Volume2 className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold font-poppins text-foreground mb-4">
-                  Audio Response
-                </h3>
+                <h3 className="text-xl font-semibold font-poppins text-foreground mb-4">Audio Response</h3>
                 <p className="text-muted-foreground font-inter mb-4">
                   Clear guidance in your preferred language with voice
                 </p>
@@ -98,8 +115,11 @@ const BharatStrategy = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+
+
 
         {/* Language examples */}
         <div className="max-w-4xl mx-auto animate-fade-in-up" style={{ animationDelay: '1.2s' }}>

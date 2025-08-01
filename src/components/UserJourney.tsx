@@ -33,11 +33,11 @@ const UserJourney = () => {
     },
     {
       icon: MessageCircle,
-      title: "Ask Questions",
-      description: "Continue the conversation with follow-up questions",
+      title: "Ask by Voice",
+      description: "Ask follow-up questions using your voice in your regional language",
       color: "text-primary",
       delay: "0.8s"
-    },
+    },    
     {
       icon: Monitor,
       title: "Web App Option",
@@ -89,12 +89,12 @@ const UserJourney = () => {
                 </div>
 
                 {/* Connecting arrow for larger screens */}
-                {index < steps.length - 1 && (
+                {/* {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                     <div className="w-8 h-0.5 bg-gradient-primary"></div>
                     <div className="w-0 h-0 border-l-4 border-l-primary border-t-2 border-t-transparent border-b-2 border-b-transparent ml-6 -mt-2"></div>
                   </div>
-                )}
+                )} */}
               </div>
             );
           })}
