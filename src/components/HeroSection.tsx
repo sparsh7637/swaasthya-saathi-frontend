@@ -4,7 +4,7 @@ import heroBackground from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/14155238886?text=join%20foreign-grow', '_blank');
+    window.open('https://wa.me/14155238886?text=join%20from-are', '_blank');
   };
 
   return (

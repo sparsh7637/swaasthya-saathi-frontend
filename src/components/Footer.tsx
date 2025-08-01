@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Links */}
           <div className="flex justify-center space-x-8">
             <a 
-              href="https://github.com" 
+              href="https://github.com/Mohit2005123" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-white/70 hover:text-white transition-colors duration-300"
@@ -28,7 +28,7 @@ const Footer = () => {
               <span className="font-inter">GitHub</span>
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/sparsh-gulati-665032287" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-white/70 hover:text-white transition-colors duration-300"

@@ -103,7 +103,7 @@ const UserJourney = () => {
         {/* CTA */}
         <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
           <Button 
-            onClick={() => window.open('https://wa.me/14155238886?text=join%20foreign-grow', '_blank')}
+            onClick={() => window.open('https://wa.me/14155238886?text=join%20from-are', '_blank')}
             variant="hero" 
             size="xl"
             className="group"
