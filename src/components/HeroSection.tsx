@@ -40,9 +40,9 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
           {/* Main title */}
           <h1 className="text-5xl md:text-7xl font-bold font-poppins text-foreground leading-tight">
-            Your AI Health Assistant
+            Swaasthya Saathi
             <span className="block text-transparent bg-gradient-hero bg-clip-text">
-              on WhatsApp
+              Your AI Health Assistant on WhatsApp
             </span>
           </h1>
           
