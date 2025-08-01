@@ -41,7 +41,7 @@ const HeroSection = () => {
           {/* Main title */}
           <h1 className="text-5xl md:text-7xl font-bold font-poppins text-foreground leading-tight">
             
-            <span className="block text-transparent mt-10 bg-gradient-hero bg-clip-text">
+            <span className="block text-transparent mt-7 bg-gradient-hero bg-clip-text">
               Your AI Health Assistant
             </span>
             <span className="text-5xl md:text-7xl font-bold font-poppins text-foreground leading-tight">
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
           {/* Language indicators */}
           <div className="mt-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            <p className="text-sm text-muted-foreground mb-4">Available in</p>
+            <p className="text-xl md:text-2xl text-muted-foreground font-inter max-w-2xl mx-auto leading-relaxed mb-4">Available in</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 'हिंदी',
