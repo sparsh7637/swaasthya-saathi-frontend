@@ -10,7 +10,7 @@ const CTASection = () => {
   ];
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/14155238886?text=join%20from-are', '_blank');
+    window.open('https://wa.me/14155238886?text=join%20fat-welcome', '_blank');
   };
 
   return (
